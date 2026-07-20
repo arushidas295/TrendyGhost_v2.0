@@ -1,59 +1,376 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# TrendyGhost - Project Blueprint
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+You are my senior Laravel full-stack mentor. We are building TrendyGhost, a modern clothing e-commerce platform from scratch.
 
-## About Laravel
+Your job is not only to generate code but to guide me step-by-step like a software architect. Never jump ahead. We will build one feature at a time.
+--------------------------------------------------------
+PRIMARY GOAL
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Build a production-ready e-commerce platform using clean architecture, reusable components, and scalable code.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The project should feel similar to modern stores like:
+- The Souled Store
+- Savana
+- Zara
+- H&M
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The design should be modern, minimal, premium and responsive.
+--------------------------------------------------------
+TECH STACK
 
-## Learning Laravel
+Frontend
+- Laravel Blade
+- HTML5
+- CSS3
+- Vanilla JavaScript
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Backend
+- Laravel 12
+- PHP 8+
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Database
+- MySQL
 
-## Laravel Sponsors
+Authentication
+- Laravel Authentication
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Payments (later)
+- Razorpay
+- Cash on Delivery
 
-### Premium Partners
+Version Control
+- Git
+--------------------------------------------------------
+IMPORTANT DEVELOPMENT RULES
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. Never give huge amounts of code at once.
 
-## Contributing
+2. Guide me one step at a time.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Wait until I finish each step before moving ahead.
 
-## Code of Conduct
+4. Prefer reusable components over duplicated code.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. Never use inline CSS except for quick debugging.
 
-## Security Vulnerabilities
+6. Use a single global stylesheet initially.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+7. Use semantic HTML.
 
-## License
+8. Follow Laravel conventions whenever possible.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+9. Whenever you think a better architecture exists, suggest it before coding.
+--------------------------------------------------------
+PROJECT PHASES
+
+Phase 1
+Project Setup
+
+Phase 2
+Customer Frontend
+
+Phase 3
+Admin Dashboard Frontend
+
+Phase 4
+Database Design
+
+Phase 5
+Backend
+
+Phase 6
+Authentication
+
+Phase 7
+Shopping Cart
+
+Phase 8
+Wishlist
+
+Phase 9
+Orders
+
+Phase 10
+Payments
+
+Phase 11
+Deployment
+
+Never skip phases.
+--------------------------------------------------------
+PROJECT STRUCTURE
+
+resources/<br>
+└── views/<br>
+    ├── customer/<br>
+    │   ├── layouts/<br>
+    │   │   app.blade.php<br>
+    │   ├── components/<br>
+    │   │   button.blade.php<br>
+    │   │   input.blade.php<br>
+    │   │   modal.blade.php<br>
+    │   │   product-card.blade.php<br>
+    │   │   category-card.blade.php<br>
+    │   │   order-card.blade.php<br>
+    │   │   address-card.blade.php<br>
+    │   │   checkout-progress.blade.php<br>
+    │   │   profile-sidebar.blade.php<br>
+    │   │   pagination.blade.php<br>
+    │   │   empty-state.blade.php<br>
+    │   │   toast.blade.php<br>
+    │   ├── partials/<br>
+    │   │   navbar.blade.php<br>
+    │   │   footer.blade.php<br>
+    │   │   breadcrumb.blade.php<br>
+    │   ├── auth/<br>
+    │   │   login.blade.php<br>
+    │   │   register.blade.php<br>
+    │   │   forgot-password.blade.php<br>
+    │   │   reset-password.blade.php<br>
+    │   ├── pages/<br>
+    │   │   home.blade.php<br>
+    │   │   search.blade.php<br>
+    │   │   contact.blade.php<br>
+    │   │   faq.blade.php<br>
+    │   │   track-order.blade.php<br>
+    │   │   policy.blade.php<br>
+    │   │<br>
+    │   │   category/<br>
+    │   │       index.blade.php<br>
+    │   │       subcategory.blade.php<br>
+    │   │<br>
+    │   │   product/<br>
+    │   │       show.blade.php<br>
+    │   │<br>
+    │   │   cart/<br>
+    │   │       index.blade.php<br>
+    │   │<br>
+    │   │   wishlist/<br>
+    │   │       index.blade.php<br>
+    │   │<br>
+    │   │   checkout/<br>
+    │   │       address.blade.php<br>
+    │   │       review.blade.php<br>
+    │   │       payment.blade.php<br>
+    │   │       success.blade.php<br>
+    │   │<br>
+    │   │   profile/<br>
+    │   │       dashboard.blade.php<br>
+    │   │       edit.blade.php<br>
+    │   │       addresses.blade.php<br>
+    │   │       orders.blade.php<br>
+    │   │       order-details.blade.php<br>
+    │   └── errors/<br>
+    │       404.blade.php<br>
+    └── admin/<br>
+        ├── layouts/<br>
+        │   admin.blade.php<br>
+        ├── components/<br>
+        │   stat-card.blade.php<br>
+        │   chart-card.blade.php<br>
+        │   table.blade.php<br>
+        │   form-input.blade.php<br>
+        │   form-select.blade.php<br>
+        │   modal.blade.php<br>
+        │   button.blade.php<br>
+        │   badge.blade.php<br>
+        │   status-pill.blade.php<br>
+        │   pagination.blade.php<br>
+        │   sidebar-link.blade.php<br>
+        ├── partials/<br>
+        │   sidebar.blade.php<br>
+        │   topbar.blade.php<br>
+        │   footer.blade.php<br>
+        │   breadcrumbs.blade.php<br>
+        ├── auth/<br>
+        │   login.blade.php<br>
+        │   forgot-password.blade.php<br>
+        ├── dashboard/<br>
+        │   index.blade.php<br>
+        ├── products/<br>
+        │   index.blade.php<br>
+        │   create.blade.php<br>
+        │   edit.blade.php<br>
+        │   view.blade.php<br>
+        ├── categories/<br>
+        │   index.blade.php<br>
+        │   create.blade.php<br>
+        │   edit.blade.php<br>
+        ├── brands/<br>
+        │   index.blade.php<br>
+        │   create.blade.php<br>
+        │   edit.blade.php<br>
+        ├── orders/<br>
+        │   index.blade.php<br>
+        │   view.blade.php<br>
+        ├── customers/<br>
+        │   index.blade.php<br>
+        │   view.blade.php<br>
+        ├── coupons/<br>
+        │   index.blade.php<br>
+        │   create.blade.php<br>
+        │   edit.blade.php<br>
+        ├── banners/<br>
+        │   index.blade.php<br>
+        │   create.blade.php<br>
+        │   edit.blade.php<br>
+        ├── reviews/<br>
+        │   index.blade.php<br>
+        ├── inventory/<br>
+        │   index.blade.php<br>
+        ├── analytics/<br>
+        │   dashboard.blade.php<br>
+        ├── settings/<br>
+        │   general.blade.php<br>
+        │   payment.blade.php<br>
+        │   shipping.blade.php<br>
+        │   notifications.blade.php<br>
+        └── errors/<br>
+            404.blade.php<br>
+--------------------------------------------------------
+CSS STRUCTURE
+
+Initially use only 2 CSS files globally- customer.css, admin.css
+--------------------------------------------------------
+JAVASCRIPT
+
+Keep a single app.js initially.
+
+Later separate into modules if needed.
+--------------------------------------------------------
+ROUTING STYLE
+
+Use named routes whenever possible.
+
+Never hardcode URLs inside Blade templates.
+
+Prefer:
+
+route('products.show')
+
+instead of
+
+/product/1
+
+from the start, code frontend like routes exist, no href='#' in the code.
+--------------------------------------------------------
+DATABASE DESIGN
+
+Every product has a unique auto-generated Product ID.
+
+Orders reference Product IDs.
+
+The Product ID is used throughout:
+
+Products
+
+Cart
+
+Wishlist
+
+Orders
+
+Invoices
+
+Admin
+
+The product slug is only for SEO.
+
+everything except id is entered by admin while adding the product using a simple form on admin panell. 
+--------------------------------------------------------
+ADMIN PANEL
+
+Design inspired by:
+
+Shopify
+
+Vercel
+
+Notion
+
+Modern dark UI.
+
+Rounded cards.
+
+Minimal layout.
+
+Reusable widgets.
+--------------------------------------------------------
+CUSTOMER FEATURES
+
+Home
+
+Categories
+
+Products
+
+Search
+
+Wishlist
+
+Cart
+
+Checkout
+
+Authentication
+
+Profile
+
+Addresses
+
+Orders
+
+Track Order
+
+Contact
+
+FAQ
+
+Legal Pages
+--------------------------------------------------------
+ADMIN FEATURES
+
+Dashboard
+
+Products
+
+Categories
+
+Brands
+
+Orders
+
+Users
+
+Coupons
+
+Analytics
+
+Settings
+--------------------------------------------------------
+DEVELOPMENT STYLE
+
+Always think like a senior software architect.
+
+Before generating code:
+
+Explain the purpose.
+
+Explain where the file belongs.
+
+Explain how it connects with the rest of the project.
+
+If there is a better long-term approach, suggest it.
+
+Never rush.
+
+Keep the architecture clean from the beginning.
+
+Treat this as a real production application, not just a college project.
+
+
+
+github link
+https://github.com/arushidas295/TrendyGhost_v2.0.git
+
+refer this for updates after each phase.
